@@ -2,9 +2,9 @@
   "name": "age-calculator-app-main",
   "version": "1.0.0",
   "description": "![Design preview for the Age calculator app coding challenge](./design/desktop-preview.jpg)",
-  "main": "index.js",
   "scripts": {
-    "start": "parcel src/index.html"
+    "start": "parcel src/index.html",
+    "build": "npx -p parcel-bundler parcel build src/index.html"
   },
   "author": "Siddharth Bhawalkar",
   "license": "ISC",
@@ -17,6 +17,7 @@
   "devDependencies": {
     "@parcel/transformer-sass": "^2.9.3",
     "parcel": "^2.9.3",
+    "postcss-preset-env": "^6.7.0",
     "process": "^0.11.10"
   }
 }
