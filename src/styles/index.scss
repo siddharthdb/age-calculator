@@ -1,0 +1,14 @@
+@import "./variables";
+@import "./typography";
+
+@import "../components/index";
+
+html,
+body {
+  height: 100%;
+  background: $light-grey;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 3.5px;
+}

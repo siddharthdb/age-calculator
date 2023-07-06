@@ -1,0 +1,59 @@
+$cmp-name: "cmp-age-calc";
+
+.#{$cmp-name} {
+  &__Input {
+    &:not(:first-child) {
+      margin-left: 32px;
+
+      @media #{$sm} {
+        margin-left: 0;
+        margin-top: 12px;
+      }
+    }
+
+    & > label {
+      color: $grey;
+      font-size: 14px;
+      text-transform: uppercase;
+
+      &.error {
+        color: $red;
+      }
+    }
+
+    & > input[type="text"] {
+      font-family: Poppins-bold;
+      display: flex;
+      width: 160px;
+      padding: 12px 24px;
+      align-items: center;
+      gap: 16px;
+      color: $black;
+      font-size: 32px;
+      border-radius: 8px;
+      border: 1px solid $line;
+
+      &:focus {
+        outline: 1px solid $purple;
+      }
+
+      @media #{$sm} {
+        font-size: 24px;
+      }
+
+      &.error {
+        border: 1px solid $red;
+        outline: 1px solid $red;
+      }
+    }
+
+    .error-msg {
+      color: $red;
+      font-size: 14px;
+      font-style: italic;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: normal;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+@import '../components/button/index';
+@import '../components/input/index';
+@import '../components/result/index';
+
+$cmp-name: "cmp-age-calc";
+
+.#{$cmp-name} {
+  font-family: Poppins;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto !important; /* real browsers */
+  min-height: 100%; /* real browsers */
+
+  &__container {
+    display: flex;
+    width: 840px;
+    padding: 56px;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-radius: 24px 24px 200px 24px;
+    background: var(--white, #fff);
+
+    @media #{$sm} {
+      width: calc(100vw - 100px);
+      padding: 40px;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 64px;
+
+    @media #{$sm} {
+      flex-direction: column;
+    }
+  }
+
+  &__Button-wrapper {
+    border-bottom: 1px solid $line;
+    width: 100%;
+    height: 1px;
+    display: flex;
+    justify-content: end;
+
+    @media #{$sm} {
+      justify-content: center;
+    }
+  }
+}

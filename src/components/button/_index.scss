@@ -1,0 +1,30 @@
+$cmp-name: "cmp-age-calc";
+
+.#{$cmp-name} {
+  &__Button {
+    display: flex;
+    width: 96px;
+    height: 96px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 216px;
+    background: $purple;
+    position: relative;
+    cursor: pointer;
+    top: -48px;
+    right: 0;
+
+    &:focus,
+    &:hover {
+      outline: 1px solid $black;
+      background: $black;
+    }
+
+    @media #{$sm} {
+      width: 64px;
+      height: 64px;
+      top: -28px;
+    }
+  }
+}
