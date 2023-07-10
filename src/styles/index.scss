@@ -5,10 +5,17 @@
 
 html,
 body {
-  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;   
   background: $light-grey;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 3.5px;
+
 }
